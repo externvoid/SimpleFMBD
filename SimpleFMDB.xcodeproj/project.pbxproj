@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		608D5EAD1DF7C09C008E5DF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608D5EAC1DF7C09C008E5DF5 /* AppDelegate.swift */; };
+		608D5EAF1DF7C09C008E5DF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608D5EAE1DF7C09C008E5DF5 /* ViewController.swift */; };
+		608D5EB21DF7C09C008E5DF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608D5EB01DF7C09C008E5DF5 /* Main.storyboard */; };
+		608D5EB41DF7C09C008E5DF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 608D5EB31DF7C09C008E5DF5 /* Assets.xcassets */; };
+		608D5EB71DF7C09C008E5DF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608D5EB51DF7C09C008E5DF5 /* LaunchScreen.storyboard */; };
+		608D5EC11DF7C13D008E5DF5 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 608D5EC01DF7C13D008E5DF5 /* FMDatabase.m */; };
+		608D5EC41DF7C163008E5DF5 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 608D5EC31DF7C163008E5DF5 /* FMResultSet.m */; };
+		608D5EC71DF7C24A008E5DF5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 608D5EC61DF7C24A008E5DF5 /* libsqlite3.tbd */; };
+		608D5ECA1DF7C338008E5DF5 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 608D5EC91DF7C338008E5DF5 /* FMDatabasePool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		608D5EA91DF7C09C008E5DF5 /* SimpleFMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleFMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		608D5EAC1DF7C09C008E5DF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		608D5EAE1DF7C09C008E5DF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		608D5EB11DF7C09C008E5DF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		608D5EB31DF7C09C008E5DF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		608D5EB61DF7C09C008E5DF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		608D5EB81DF7C09C008E5DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		608D5EBE1DF7C13D008E5DF5 /* SimpleFMDB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleFMDB-Bridging-Header.h"; sourceTree = "<group>"; };
+		608D5EBF1DF7C13D008E5DF5 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		608D5EC01DF7C13D008E5DF5 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		608D5EC21DF7C163008E5DF5 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		608D5EC31DF7C163008E5DF5 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		608D5EC61DF7C24A008E5DF5 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		608D5EC81DF7C32C008E5DF5 /* FMDatabasePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		608D5EC91DF7C338008E5DF5 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		608D5EA61DF7C09C008E5DF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608D5EC71DF7C24A008E5DF5 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		608D5EA01DF7C09C008E5DF5 = {
+			isa = PBXGroup;
+			children = (
+				608D5EAB1DF7C09C008E5DF5 /* SimpleFMDB */,
+				608D5EAA1DF7C09C008E5DF5 /* Products */,
+				608D5EC51DF7C24A008E5DF5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		608D5EAA1DF7C09C008E5DF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				608D5EA91DF7C09C008E5DF5 /* SimpleFMDB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		608D5EAB1DF7C09C008E5DF5 /* SimpleFMDB */ = {
+			isa = PBXGroup;
+			children = (
+				608D5ECB1DF7C695008E5DF5 /* FMDB */,
+				608D5EAC1DF7C09C008E5DF5 /* AppDelegate.swift */,
+				608D5EAE1DF7C09C008E5DF5 /* ViewController.swift */,
+				608D5EB01DF7C09C008E5DF5 /* Main.storyboard */,
+				608D5EB31DF7C09C008E5DF5 /* Assets.xcassets */,
+				608D5EB51DF7C09C008E5DF5 /* LaunchScreen.storyboard */,
+				608D5EB81DF7C09C008E5DF5 /* Info.plist */,
+			);
+			path = SimpleFMDB;
+			sourceTree = "<group>";
+		};
+		608D5EC51DF7C24A008E5DF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				608D5EC61DF7C24A008E5DF5 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		608D5ECB1DF7C695008E5DF5 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				608D5EBE1DF7C13D008E5DF5 /* SimpleFMDB-Bridging-Header.h */,
+				608D5EC21DF7C163008E5DF5 /* FMResultSet.h */,
+				608D5EC81DF7C32C008E5DF5 /* FMDatabasePool.h */,
+				608D5EBF1DF7C13D008E5DF5 /* FMDatabase.h */,
+				608D5EC31DF7C163008E5DF5 /* FMResultSet.m */,
+				608D5EC01DF7C13D008E5DF5 /* FMDatabase.m */,
+				608D5EC91DF7C338008E5DF5 /* FMDatabasePool.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		608D5EA81DF7C09C008E5DF5 /* SimpleFMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 608D5EBB1DF7C09C008E5DF5 /* Build configuration list for PBXNativeTarget "SimpleFMDB" */;
+			buildPhases = (
+				608D5EA51DF7C09C008E5DF5 /* Sources */,
+				608D5EA61DF7C09C008E5DF5 /* Frameworks */,
+				608D5EA71DF7C09C008E5DF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleFMDB;
+			productName = SimpleFMDB;
+			productReference = 608D5EA91DF7C09C008E5DF5 /* SimpleFMDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		608D5EA11DF7C09C008E5DF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Hiroshi Tanaka";
+				TargetAttributes = {
+					608D5EA81DF7C09C008E5DF5 = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 608D5EA41DF7C09C008E5DF5 /* Build configuration list for PBXProject "SimpleFMDB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 608D5EA01DF7C09C008E5DF5;
+			productRefGroup = 608D5EAA1DF7C09C008E5DF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				608D5EA81DF7C09C008E5DF5 /* SimpleFMDB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		608D5EA71DF7C09C008E5DF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608D5EB71DF7C09C008E5DF5 /* LaunchScreen.storyboard in Resources */,
+				608D5EB41DF7C09C008E5DF5 /* Assets.xcassets in Resources */,
+				608D5EB21DF7C09C008E5DF5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		608D5EA51DF7C09C008E5DF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608D5EC11DF7C13D008E5DF5 /* FMDatabase.m in Sources */,
+				608D5EAF1DF7C09C008E5DF5 /* ViewController.swift in Sources */,
+				608D5ECA1DF7C338008E5DF5 /* FMDatabasePool.m in Sources */,
+				608D5EC41DF7C163008E5DF5 /* FMResultSet.m in Sources */,
+				608D5EAD1DF7C09C008E5DF5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		608D5EB01DF7C09C008E5DF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				608D5EB11DF7C09C008E5DF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		608D5EB51DF7C09C008E5DF5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				608D5EB61DF7C09C008E5DF5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		608D5EB91DF7C09C008E5DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		608D5EBA1DF7C09C008E5DF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		608D5EBC1DF7C09C008E5DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SimpleFMDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ad.private.SimpleFMDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleFMDB/SimpleFMDB-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		608D5EBD1DF7C09C008E5DF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SimpleFMDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ad.private.SimpleFMDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleFMDB/SimpleFMDB-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		608D5EA41DF7C09C008E5DF5 /* Build configuration list for PBXProject "SimpleFMDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608D5EB91DF7C09C008E5DF5 /* Debug */,
+				608D5EBA1DF7C09C008E5DF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		608D5EBB1DF7C09C008E5DF5 /* Build configuration list for PBXNativeTarget "SimpleFMDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608D5EBC1DF7C09C008E5DF5 /* Debug */,
+				608D5EBD1DF7C09C008E5DF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 608D5EA11DF7C09C008E5DF5 /* Project object */;
+}
